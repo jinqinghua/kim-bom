@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" comparisonMethod="maven"
+         xsi:schemaLocation="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0 http://mojo.codehaus.org/versions-maven-plugin/xsd/rule-2.0.0.xsd">
+    <!-- usage: mvn versions:display-dependency-updates -DprocessDependencyManagement=false -->
+    <ignoreVersions>
+        <!-- https://gist.github.com/seahrh/b13f4f3d618ad7c817038e0bc124ef29 -->
+        <!-- https://github.com/mojohaus/versions-maven-plugin/issues/157 -->
+        <ignoreVersion type="regex">
+            .*[-_\.](alpha|Alpha|ALPHA|beta|Beta|BETA|rc|RC|CR1|CR2|M|EA|dev|ce|ccs|pr1|pr2|jenkins-?[0-9]|cloud|atlassian|atlassian-?[0-9])[-_\.]?[0-9]?.*
+        </ignoreVersion>
+        <!-- Ignore the version name by year start with 200 -->
+        <ignoreVersion type="regex">^200.*$</ignoreVersion>
+    </ignoreVersions>
+    <rules>
+    </rules>
+</ruleset>
