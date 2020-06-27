@@ -37,6 +37,8 @@
 
         <joda-time.verion>2.10.6</joda-time.verion>
 
+        <guava.version>29.0-jre</guava.version>
+
         <kaptcha.verion>2.3.2</kaptcha.verion>
         <thumbnailator.version>0.4.11</thumbnailator.version>
 
@@ -82,6 +84,12 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.verion}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
 
             <dependency>
