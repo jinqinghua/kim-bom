@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from userRepository -->
     </parent>
 
-    <groupId>me.kim</groupId>
+    <groupId>kim</groupId>
     <artifactId>kim-dependencies</artifactId>
     <version>${project.parent.version}</version>
     <packaging>pom</packaging>
