@@ -12,7 +12,7 @@
 
     <groupId>me.kim</groupId>
     <artifactId>kim-dependencies</artifactId>
-    <version>2.3.1.0-SNAPSHOT</version>
+    <version>${project.parent.version}</version>
     <packaging>pom</packaging>
 
     <name>kim-dependencies</name>
@@ -25,7 +25,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
-        <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
+        <spring-boot.version>${project.parent.version}</spring-boot.version>
         <!-- mybatis -->
         <mybatis-spring-boot-starter.version>2.1.3</mybatis-spring-boot-starter.version>
         <mybatis-spring.version>2.0.5</mybatis-spring.version>
@@ -35,12 +35,16 @@
         <commons-io.version>2.7</commons-io.version>
         <commons-configuration.version>1.10</commons-configuration.version>
 
+        <!-- jwt -->
+        <jjwt.version>0.11.2</jjwt.version>
+
+        <!-- utils -->
         <joda-time.verion>2.10.6</joda-time.verion>
-
         <guava.version>29.0-jre</guava.version>
-
-        <kaptcha.verion>2.3.2</kaptcha.verion>
         <thumbnailator.version>0.4.11</thumbnailator.version>
+
+        <!-- captcha -->
+        <kaptcha.verion>2.3.2</kaptcha.verion>
 
         <!-- dev -->
         <log4jdbc.version>1.2</log4jdbc.version>
@@ -80,18 +84,43 @@
                 <version>${commons-configuration.version}</version>
             </dependency>
 
+            <!-- jwt -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <!-- utils -->
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.verion}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+            <dependency>
+                <groupId>net.coobird</groupId>
+                <artifactId>thumbnailator</artifactId>
+                <version>${thumbnailator.version}</version>
+            </dependency>
 
+            <!-- captcha -->
             <dependency>
                 <groupId>com.github.penggle</groupId>
                 <artifactId>kaptcha</artifactId>
@@ -102,11 +131,6 @@
                         <groupId>javax.servlet</groupId>
                     </exclusion>
                 </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>net.coobird</groupId>
-                <artifactId>thumbnailator</artifactId>
-                <version>${thumbnailator.version}</version>
             </dependency>
 
             <!-- dev -->
