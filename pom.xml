@@ -12,7 +12,7 @@
 
     <groupId>kim</groupId>
     <artifactId>kim-dependencies</artifactId>
-    <version>${project.parent.version}</version>
+    <version>2.3.1.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>kim-dependencies</name>
