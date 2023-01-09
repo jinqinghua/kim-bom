@@ -6,16 +6,16 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.5</version>
+        <version>2.7.7</version>
         <relativePath/> <!-- lookup parent from userRepository -->
     </parent>
 
     <groupId>kim</groupId>
-    <artifactId>kim-dependencies</artifactId>
+    <artifactId>kim-bom</artifactId>
     <version>${project.parent.version}</version>
     <packaging>pom</packaging>
 
-    <name>kim-dependencies</name>
+    <name>kim-bom</name>
     <description>Collections of java dependencies</description>
 
     <properties>
@@ -27,9 +27,10 @@
 
         <spring-boot.version>${project.parent.version}</spring-boot.version>
         <!-- mybatis -->
-        <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
-        <mybatis-spring.version>2.0.6</mybatis-spring.version>
-        <mybatis.version>3.5.7</mybatis.version>
+        <!-- https://github.com/mybatis/spring-boot-starter/blob/mybatis-spring-boot-2.3.0/pom.xml -->
+        <mybatis-spring-boot-starter.version>2.3.0</mybatis-spring-boot-starter.version>
+        <mybatis-spring.version>2.1.0</mybatis-spring.version>
+        <mybatis.version>3.5.11</mybatis.version>
 
         <!-- commons -->
         <commons-io.version>2.11.0</commons-io.version>
@@ -38,22 +39,22 @@
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
 
         <!-- db -->
-        <druid.version>1.2.8</druid.version>
+        <druid.version>1.2.15</druid.version>
         <log4jdbc.version>1.2</log4jdbc.version>
 
         <!-- jwt -->
-        <jjwt.version>0.11.2</jjwt.version>
+        <jjwt.version>0.11.5</jjwt.version>
 
         <!-- utils -->
-        <joda-time.verion>2.10.12</joda-time.verion>
-        <guava.version>31.0.1-jre</guava.version>
-        <thumbnailator.version>0.4.14</thumbnailator.version>
+        <joda-time.verion>2.12.2</joda-time.verion>
+        <guava.version>31.1-jre</guava.version>
+        <thumbnailator.version>0.4.19</thumbnailator.version>
 
         <!-- captcha -->
         <kaptcha.verion>2.3.2</kaptcha.verion>
 
         <!-- test -->
-        <podam.version>7.2.7.RELEASE</podam.version>
+        <podam.version>7.2.11.RELEASE</podam.version>
 
         <!-- plugin -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>

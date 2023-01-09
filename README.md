@@ -1,2 +1,2 @@
-# kim-dependencies
+# kim-bom
 Collections of java dependencies
