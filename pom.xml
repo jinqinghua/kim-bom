@@ -24,6 +24,9 @@
 
         <!--<spring-boot.version>${project.parent.version}</spring-boot.version>-->
 
+        <!-- jakarta ee -->
+        <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
+
         <!-- mybatis -->
         <!-- https://github.com/mybatis/spring-boot-starter/blob/mybatis-spring-boot-3.0.2/pom.xml -->
         <mybatis-spring-boot-starter.version>3.0.2</mybatis-spring-boot-starter.version>
@@ -60,6 +63,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- jakarta ee-->
+            <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>${jakarta.annotation-api.version}</version>
+            </dependency>
+
             <!-- mybatis -->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
