@@ -2,7 +2,12 @@
 <ruleset comparisonMethod="maven"
          xmlns="https://www.mojohaus.org/VERSIONS/RULE/2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://www.mojohaus.org/VERSIONS/RULE/2.1.0 https://www.mojohaus.org/versions/versions-model/xsd/rule-2.1.0.xsd">
-    <!-- usage: mvn versions:display-dependency-updates -DprocessDependencyManagement=false -->
+    <!--
+    usage:
+    1. delete line <dependencyManagement> and </dependencyManagement>
+    2. mvn versions:display-dependency-updates -DprocessDependencyManagement=false
+    3. rollback step 1
+    -->
     <!-- https://github.com/mojohaus/versions-maven-plugin/issues/157 -->
     <ignoreVersions>
         <ignoreVersion type="regex">
