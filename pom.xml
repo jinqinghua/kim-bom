@@ -48,7 +48,7 @@
 
         <!-- utils -->
         <joda-time.verion>2.12.7</joda-time.verion>
-        <guava.version>33.1.0-jre</guava.version>
+        <guava.version>33.2.0-jre</guava.version>
         <thumbnailator.version>0.4.20</thumbnailator.version>
 
         <!-- captcha -->
@@ -61,7 +61,7 @@
         <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
     </properties>
 
-    <dependencyManagement>
+<!--    <dependencyManagement>-->
         <dependencies>
             <!-- jakarta ee-->
             <dependency>
@@ -183,7 +183,7 @@
                 <scope>test</scope>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+<!--    </dependencyManagement>-->
 
     <build>
         <plugins>
